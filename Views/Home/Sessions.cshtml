@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Sessions";
+}
+
+<form>
+    Встановити атрибут сесії: <input name="session-attr"/> 
+    <input type="submit" value="Встановити" />
+</form>
+<p>
+    Раніше встановлений атрибут: @Context.Session.GetString("session-attribute");
+</p>
